@@ -5,6 +5,7 @@ import me.confidencep.ipldashboard.repository.MatchRepository;
 import me.confidencep.ipldashboard.repository.TeamRepository;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
+@CrossOrigin
 public class TeamContoller {
 
     private TeamRepository teamRepository;
